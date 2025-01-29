@@ -6,10 +6,7 @@ import { ShowMovies } from "../components/ShowMovies";
 export const Movies =()=>{
 const [movies, setMovies] = useState<IMovie[]>([]);
 const [input, setInput] = useState('')
-useEffect(()=>{
-   
-    
-})
+
 const handleSubmit = async (e:FormEvent)=>{
     e.preventDefault();
     if(!input.trim()) return;
